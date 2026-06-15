@@ -9,3 +9,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 When generating images, do not use HTML, CSS, Python, Pillow, canvas export, screenshots, or other post-processing workflows to add or compose text. If the requested image includes text, include the text directly in the image-generation prompt and generate the visual and text together as one image.
 
 This applies to banners, posters, social images, thumbnails, and any other text-in-image output. Prefer the image generation tool's native output over programmatic layout or later text overlay.
+
+## Repository Setup Skill
+
+If a user asks to set up, install, run, or onboard this repository, first read and follow `.codex/skills/article-image-create-setup/SKILL.md`. This project-local skill is intended for downloaded copies of this folder, so an AI agent can answer "セットアップして" with the correct commands, security checks, and Supabase/OpenAI configuration guidance.

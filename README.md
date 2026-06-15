@@ -51,6 +51,11 @@ pnpm setup
 
 `pnpm setup` installs dependencies and creates `.env.local` from `.env.local.example` if it does not exist.
 
+AI setup helper:
+
+- If you downloaded this folder and want an AI agent to set it up, ask from the repository root: `セットアップして`
+- The project-local setup skill is at `.codex/skills/article-image-create-setup/SKILL.md`
+
 Edit `.env.local`:
 
 ```bash
