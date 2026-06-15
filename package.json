@@ -1,0 +1,45 @@
+{
+  "name": "article-image-create",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "setup:db": "pnpm dlx supabase@2.106.0 db push --include-all",
+    "check": "pnpm lint && pnpm test && pnpm build",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "cleanup:video-assets": "tsx scripts/cleanup-video-assets.ts",
+    "backfill:first-view": "tsx scripts/backfill-first-view-sources.ts",
+    "normalize:asset-categories": "tsx scripts/normalize-asset-categories.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.108.1",
+    "cheerio": "^1.2.0",
+    "image-size": "^2.0.2",
+    "lucide-react": "^1.18.0",
+    "next": "16.2.9",
+    "openai": "^6.42.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "ws": "^8.21.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/ws": "^8.18.1",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.9",
+    "playwright": "^1.60.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.22.4",
+    "typescript": "^5",
+    "vitest": "^4.1.8"
+  }
+}
