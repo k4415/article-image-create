@@ -36,6 +36,7 @@ yarn-error.log*
 
 # local agent planning artifacts
 /docs/superpowers/plans/
+image_dev_log*.md
 
 # vercel
 .vercel

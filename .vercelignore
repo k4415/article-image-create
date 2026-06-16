@@ -1,0 +1,8 @@
+.env*
+.next/
+node_modules/
+coverage/
+docs/superpowers/
+image_dev_log*.md
+supabase/.temp/
+tsconfig.tsbuildinfo
